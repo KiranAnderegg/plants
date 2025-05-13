@@ -1,7 +1,7 @@
 # Plantenverzorging app
 
 ### Wat is het probleem?
-Veel mensen hebben planten, maar vergeten vaak om ze water te geven of weten niet hoe ze een bepaalde plant moeten verzorgen. 
+Veel mensen hebben planten, maar vergeten vaak om ze water te geven of weten niet hoe ze een bepaalde plant moeten verzorgen.
 
 ### Wie zijn je verwachte gebruikers?
 - Mensen met  planten of tuinen die hulp nodig hebben bij plantverzorging
@@ -20,15 +20,18 @@ Vooral op een smartphone, zodat gebruikers snel kunnen checken of een plant wate
 Deze applicatie helpt gebruikers om hun planten gezond te houden door persoonlijke watergeefadviezen te geven op basis van plantgegevens en weersinformatie. De app houdt bij wanneer je een plant voor het laatst water hebt gegeven en geeft meldingen.
 
 ### Features
-- Plantenoverzicht
-- Nieuwe plant toevoegen (naam, foto, type)
-- Automatisch watergeefadvies per plant
-- Knop om aan te geven dat plant water heeft gehad
-- Automatische notificaties
-- Opslag van gegevens per gebruiker
-- Statistieken 
 - Login en gebruikersaccounts
+- Opslag van gegevens per gebruiker
+- Plantenoverzicht
+- Automatisch watergeefadvies per plant
+- Nieuwe plant toevoegen (naam, foto, type)
+- Knop om aan te geven dat plant water heeft gehad
 - Notities per plant
+- Statistieken
+
+### Optional Features
+- Automatische notificaties
+
 
 ### Bronnen
 - **Plantendatabase**:  
@@ -40,4 +43,3 @@ Deze applicatie helpt gebruikers om hun planten gezond te houden door persoonlij
   - Flask
   - SQLAlchemy
   - Web Push API – browsernotificaties
-  - SQLite 
