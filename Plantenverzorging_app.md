@@ -21,7 +21,6 @@ Deze applicatie helpt gebruikers om hun planten gezond te houden door persoonlij
 
 ### Features
 - Login en gebruikersaccounts
-- Opslag van gegevens per gebruiker
 - Plantenoverzicht
 - Automatisch watergeefadvies per plant
 - Nieuwe plant toevoegen (naam, foto, type)
