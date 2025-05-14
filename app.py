@@ -24,7 +24,7 @@ Session(app)
 @app.route("/")
 @login_required
 def homepage():
-    pass
+    return render_template("homepage.html")
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
