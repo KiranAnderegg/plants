@@ -18,7 +18,7 @@ Session(app)
 
 @app.route("/")
 def homepage():
-    return render_template("homepage.html")
+    return render_template("welcome.html")
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -38,6 +38,32 @@ def register():
 
     else:
         return render_template("register.html")
+
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    """Log user in"""
+
+    session.clear()
+
+    if request.method == "POST":
+
+        if not request.form.get("username"):
+            return apology("must provide username", 403)
+
+        elif not request.form.get("password"):
+            return apology("must provide password", 403)
+
+        if len(rows) != 1 or not check_password_hash(rows[0]["hash"], request.form.get("password")):
+            return apology("invalid username and/or password", 403)
+
+        session["user_id"] = rows[0]["id"]
+
+        return redirect("/")
+
+    else:
+        return render_template("login.html")
+
 
 @app.route("/add plant", methods=["GET", "POST"])
 def add_plant():
